@@ -1,9 +1,12 @@
 package main
 
-import "fmt" 
+import "fmt"
 
-func main(){
+func main() {
 
-    fmt.Println("Hello, Go!")
+	var a, b int64
+	fmt.Scan(&a)
+	fmt.Scan(&b)
+	fmt.Println(a + b)
 
 }

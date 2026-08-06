@@ -4,9 +4,9 @@ import "fmt"
 
 func main() {
 
-	var a, b int64
-	fmt.Scan(&a)
-	fmt.Scan(&b)
-	fmt.Println(a + b)
+	var height, width int64
+	fmt.Scan(&height)
+	fmt.Scan(&width)
+	fmt.Println(height * width)
 
 }

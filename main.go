@@ -1,16 +1,16 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
-	"strings"
 )
 
 func main() {
+	var name string
+	var age int64
 
-	data := bufio.NewScanner(os.Stdin)
-	data.Scan()
-	line := data.Text()
-	fmt.Println(strings.ToUpper(line))
+	fmt.Scan(&name)
+	fmt.Scan(&age)
+
+	fmt.Printf("Hi, %s! You are %d years old.\n", name, age)
+
 }

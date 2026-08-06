@@ -1,12 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+)
 
 func main() {
 
-	var height, width int64
-	fmt.Scan(&height)
-	fmt.Scan(&width)
-	fmt.Println(height * width)
-
+	data := bufio.NewScanner(os.Stdin)
+	data.Scan()
+	line := data.Text()
+	fmt.Println(strings.ToUpper(line))
 }

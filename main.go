@@ -4,12 +4,12 @@ import "fmt"
 
 func main() {
 	var n int
-
 	fmt.Scan(&n)
+	fmt.Println(square(n))
 
-	total := 0
-	for i := 1; i <= n; i++ {
-		total += i
-	}
-	fmt.Println(total)
+}
+
+func square(n int) int {
+
+	return n * n
 }

@@ -7,14 +7,9 @@ func main() {
 
 	fmt.Scan(&n)
 
-	if n%15 == 0 {
-		fmt.Println("FizzBuzz")
-	} else if n%3 == 0 {
-		fmt.Println("Fizz")
-	} else if n%5 == 0 {
-		fmt.Println("Buzz")
-	} else {
-		fmt.Println(n)
+	total := 0
+	for i := 1; i <= n; i++ {
+		total += i
 	}
-
+	fmt.Println(total)
 }

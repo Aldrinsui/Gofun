@@ -11,6 +11,6 @@ func main() {
 	fmt.Scan(&name)
 	fmt.Scan(&age)
 
-	fmt.Printf("Hi, %s! You are %d years old.\n", name, age)
+	fmt.Printf("Hi, %v! You are %v years old.\n", name, age)
 
 }

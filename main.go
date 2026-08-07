@@ -1,16 +1,20 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	var name string
-	var age int64
+	var n int
 
-	fmt.Scan(&name)
-	fmt.Scan(&age)
+	fmt.Scan(&n)
 
-	fmt.Printf("Hi, %v! You are %v years old.\n", name, age)
+	if n%15 == 0 {
+		fmt.Println("FizzBuzz")
+	} else if n%3 == 0 {
+		fmt.Println("Fizz")
+	} else if n%5 == 0 {
+		fmt.Println("Buzz")
+	} else {
+		fmt.Println(n)
+	}
 
 }
